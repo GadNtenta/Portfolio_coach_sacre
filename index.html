@@ -13,57 +13,81 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header>
-      <a href="index.html"
+    <header class="header">
+      <a href="index.html" class="header__logo"
         ><img src="assets/logo.svg" alt="Portfolio Logo"
       /></a>
-      <nav>
-        <menu>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="assets/cv.pdf" download>Download CV</a></li>
+      <nav class="header__nav">
+        <menu class="header__menu">
+          <li class="header__menu-item"><a href="#home">Home</a></li>
+          <li class="header__menu-item"><a href="#about">About Me</a></li>
+          <li class="header__menu-item"><a href="#services">Services</a></li>
+          <li class="header__menu-item"><a href="#projects">Projects</a></li>
+          <li class="header__menu-item">
+            <a href="#testimonials">Testimonials</a>
+          </li>
+          <li class="header__menu-item"><a href="#contact">Contact</a></li>
+          <li class="header__menu-item">
+            <a href="assets/cv.pdf" download>Download CV</a>
+          </li>
         </menu>
       </nav>
     </header>
 
     <main>
       <!-- Hero Section -->
-      <section id="home">
-        <div>
-          <p>Hi, I am</p>
-          <h1>Fawzi Sayed</h1>
-          <h2>UI & UX <span>Designer</span></h2>
-          <p>
+      <section id="home" class="hero">
+        <div class="hero__content">
+          <p class="hero__intro">Hi, I am</p>
+          <h1 class="hero__name">Fawzi Sayed</h1>
+          <h2 class="hero__role">
+            UI & UX <span class="hero__role-highlight">Designer</span>
+          </h2>
+          <p class="hero__description">
             Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
             nibh lectus netus in.
           </p>
-          <a href="#contact">Hire Me</a>
+          <a href="#contact" class="hero__cta">Hire Me</a>
         </div>
-        <div>
-          <div>
-            <img src="assets/photo_profile.svg" alt="Fawzi Sayed Profile" />
+        <div class="hero__profile">
+          <div class="hero__profile-image-wrapper">
+            <img
+              src="assets/photo_profile.svg"
+              alt="Fawzi Sayed Profile"
+              class="hero__profile-image"
+            />
           </div>
-          <ul>
-            <li>
-              <a href="#"
-                ><img src="assets/icon-facebook.svg" alt="Facebook"
+          <ul class="hero__socials">
+            <li class="hero__socials-item">
+              <a href="#" class="hero__socials-link"
+                ><img
+                  src="assets/logo/icon-facebook.svg"
+                  alt="Facebook"
+                  class="hero__socials-icon"
               /></a>
             </li>
-            <li>
-              <a href="#"><img src="assets/icon-x.svg" alt="X" /></a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="assets/icon-instagram.svg" alt="Instagram"
+            <li class="hero__socials-item">
+              <a href="#" class="hero__socials-link"
+                ><img
+                  src="assets/logo/icon-x.svg"
+                  alt="X"
+                  class="hero__socials-icon"
               /></a>
             </li>
-            <li>
-              <a href="#"
-                ><img src="assets/icon-linkedin.svg" alt="LinkedIn"
+            <li class="hero__socials-item">
+              <a href="#" class="hero__socials-link"
+                ><img
+                  src="assets/logo/icon-instagram.svg"
+                  alt="Instagram"
+                  class="hero__socials-icon"
+              /></a>
+            </li>
+            <li class="hero__socials-item">
+              <a href="#" class="hero__socials-link"
+                ><img
+                  src="assets/logo/icon-linkedin.svg"
+                  alt="LinkedIn"
+                  class="hero__socials-icon"
               /></a>
             </li>
           </ul>
@@ -71,41 +95,55 @@
       </section>
 
       <!-- About Me Section -->
-      <section id="about">
-        <div>
-          <img src="assets/image_section_about.png" alt="About Me Image" />
+      <section id="about" class="about">
+        <div class="about__image-wrapper">
+          <img
+            src="assets/image_section_about.png"
+            alt="About Me Image"
+            class="about__image"
+          />
         </div>
 
-        <div>
-          <div>
-            <h2>About Me</h2>
-            <p>
+        <div class="about__content">
+          <div class="about__intro">
+            <h2 class="about__title">About Me</h2>
+            <p class="about__description">
               Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
               nibh lectus netus in. Aliquet donec morbi convallis pretium.
               Turpis tempus pharetra
             </p>
           </div>
-          <div>
-            <ul>
-              <li>
-                <h3>UX</h3>
-                <div><span></span></div>
+          <div class="about__skills">
+            <ul class="about__skills-list">
+              <li class="about__skills-item">
+                <h3 class="about__skills-name">UX</h3>
+                <div class="about__skills-progress">
+                  <span class="about__skills-progress-bar"></span>
+                </div>
               </li>
-              <li>
-                <h3>UI</h3>
-                <div><span></span></div>
+              <li class="about__skills-item">
+                <h3 class="about__skills-name">UI</h3>
+                <div class="about__skills-progress">
+                  <span class="about__skills-progress-bar"></span>
+                </div>
               </li>
-              <li>
-                <h3>Web Design</h3>
-                <div><span></span></div>
+              <li class="about__skills-item">
+                <h3 class="about__skills-name">Web Design</h3>
+                <div class="about__skills-progress">
+                  <span class="about__skills-progress-bar"></span>
+                </div>
               </li>
-              <li>
-                <h3>App Design</h3>
-                <div><span></span></div>
+              <li class="about__skills-item">
+                <h3 class="about__skills-name">App Design</h3>
+                <div class="about__skills-progress">
+                  <span class="about__skills-progress-bar"></span>
+                </div>
               </li>
-              <li>
-                <h3>Graphic Design</h3>
-                <div><span></span></div>
+              <li class="about__skills-item">
+                <h3 class="about__skills-name">Graphic Design</h3>
+                <div class="about__skills-progress">
+                  <span class="about__skills-progress-bar"></span>
+                </div>
               </li>
             </ul>
           </div>
@@ -113,172 +151,220 @@
       </section>
 
       <!-- Services Section -->
-      <section id="services">
-        <div>
-          <h2>Services</h2>
-          <p>
+      <section id="services" class="services">
+        <div class="services__intro">
+          <h2 class="services__title">Services</h2>
+          <p class="services__description">
             Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
             nibh lectus netus in.
           </p>
         </div>
-        <div>
-          <ul>
-            <li>
-              <img src="assets/icon-ux.svg" alt="UI/UX" />
-              <h3>UI & UX</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="services__list">
+          <ul class="services__list-items">
+            <li class="services__list-item">
+              <img
+                src="assets/icon-ux.svg"
+                alt="UI/UX"
+                class="services__icon"
+              />
+              <h3 class="services__name">UI & UX</h3>
+              <p class="services__details">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
             </li>
-            <li>
-              <img src="assets/icon-ux.svg" alt="UI/UX" />
-              <h3>UI & UX</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <li class="services__list-item">
+              <img
+                src="assets/icon-website.svg"
+                alt="Website Design"
+                class="services__icon"
+              />
+              <h3 class="services__name">Website Design</h3>
+              <p class="services__details">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
             </li>
-            <li>
-              <img src="assets/icon-website.svg" alt="Website Design" />
-              <h3>Website Design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <li class="services__list-item">
+              <img
+                src="assets/icon-app.svg"
+                alt="App Design"
+                class="services__icon"
+              />
+              <h3 class="services__name">App Design</h3>
+              <p class="services__details">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
             </li>
-            <li>
-              <img src="assets/icon-app.svg" alt="App Design" />
-              <h3>App Design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </li>
-            <li>
-              <img src="assets/icon-graphic.svg" alt="Graphic Design" />
-              <h3>Graphic Design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <li class="services__list-item">
+              <img
+                src="assets/icon-graphic.svg"
+                alt="Graphic Design"
+                class="services__icon"
+              />
+              <h3 class="services__name">Graphic Design</h3>
+              <p class="services__details">
+                Lorem ipsum dolor sit amet consectetur.
+              </p>
             </li>
           </ul>
         </div>
       </section>
 
       <!-- Projects Section -->
-      <section id="projects">
-        <div>
-          <h2>My Projects</h2>
-          <p>
+      <section id="projects" class="projects">
+        <div class="projects__intro">
+          <h2 class="projects__title">My Projects</h2>
+          <p class="projects__description">
             Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam
             mauris est risus lectus.
           </p>
         </div>
-        <div>
-          <ul>
-            <li>All</li>
-            <li>UI/UX</li>
-            <li>Web Design</li>
-            <li>App Design</li>
-            <li>Graphic Design</li>
+        <div class="projects__filters">
+          <ul class="projects__filter-list">
+            <li class="projects__filter-item">All</li>
+            <li class="projects__filter-item">UI/UX</li>
+            <li class="projects__filter-item">Web Design</li>
+            <li class="projects__filter-item">App Design</li>
+            <li class="projects__filter-item">Graphic Design</li>
           </ul>
         </div>
-        <div>
-          <ul>
-            <li>
-              <img src="assets/projects.svg" alt="Project 1" />
-              <h4>Web Design</h4>
-              <p>AirCalling Landing Page Design</p>
+        <div class="projects__gallery">
+          <ul class="projects__gallery-list">
+            <li class="projects__gallery-item">
+              <img
+                src="assets/projects.svg"
+                alt="Project 1"
+                class="projects__gallery-image"
+              />
+              <h4 class="projects__gallery-category">Web Design</h4>
+              <p class="projects__gallery-description">
+                AirCalling Landing Page Design
+              </p>
             </li>
-            <li>
-              <img src="assets/projects.svg" alt="Project 2" />
-              <h4>Web Design</h4>
-              <p>Business Landing Page Design</p>
+            <li class="projects__gallery-item">
+              <img
+                src="assets/projects.svg"
+                alt="Project 2"
+                class="projects__gallery-image"
+              />
+              <h4 class="projects__gallery-category">Web Design</h4>
+              <p class="projects__gallery-description">
+                Business Landing Page Design
+              </p>
             </li>
-            <li>
-              <img src="assets/projects.svg" alt="Project 3" />
-              <h4>Web Design</h4>
-              <p>Ecom Web Page Design</p>
+            <li class="projects__gallery-item">
+              <img
+                src="assets/projects.svg"
+                alt="Project 3"
+                class="projects__gallery-image"
+              />
+              <h4 class="projects__gallery-category">Web Design</h4>
+              <p class="projects__gallery-description">Ecom Web Page Design</p>
             </li>
           </ul>
         </div>
       </section>
 
       <!-- Testimonials Section -->
-      <section id="testimonials">
-        <div>
-          <h2>Testimonials</h2>
-          <p>
+      <section id="testimonials" class="testimonials">
+        <div class="testimonials__intro">
+          <h2 class="testimonials__title">Testimonials</h2>
+          <p class="testimonials__description">
             Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
             nibh lectus netus in.
           </p>
         </div>
-        <div>
-          <ul>
-            <li>
+        <div class="testimonials__list">
+          <ul class="testimonials__list-items">
+            <li class="testimonials__item">
               <img
                 src="assets/photo_profile_testimonials.svg"
                 alt="Testimonial 1"
+                class="testimonials__item-image"
               />
-              <p>
+              <p class="testimonials__item-text">
                 "Lorem ipsum dolor sit amet consectetur. In enim cursus odio
                 accumsan."
               </p>
-              <h4>John Doe</h4>
-              <p>CEO, XYZ Company</p>
+              <h4 class="testimonials__item-name">John Doe</h4>
+              <p class="testimonials__item-role">CEO, XYZ Company</p>
             </li>
-            <li>
+            <li class="testimonials__item">
               <img
                 src="assets/photo_profile_testimonials.svg"
                 alt="Testimonial 2"
+                class="testimonials__item-image"
               />
-              <p>
+              <p class="testimonials__item-text">
                 "Lorem ipsum dolor sit amet consectetur. In enim cursus odio
                 accumsan."
               </p>
-              <h4>John Doe</h4>
-              <p>CEO, XYZ Company</p>
+              <h4 class="testimonials__item-name">Jane Smith</h4>
+              <p class="testimonials__item-role">Product Manager, ABC Inc</p>
             </li>
-            <li>
+            <li class="testimonials__item">
               <img
                 src="assets/photo_profile_testimonials.svg"
                 alt="Testimonial 3"
+                class="testimonials__item-image"
               />
-              <p>
+              <p class="testimonials__item-text">
                 "Lorem ipsum dolor sit amet consectetur. In enim cursus odio
                 accumsan."
               </p>
-              <h4>John Doe</h4>
-              <p>CEO, XYZ Company</p>
+              <h4 class="testimonials__item-name">Emily Jones</h4>
+              <p class="testimonials__item-role">Freelancer</p>
             </li>
           </ul>
         </div>
-        <div>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <div class="testimonials__navigation">
+          <ul class="testimonials__dots">
+            <li class="testimonials__dot"></li>
+            <li class="testimonials__dot"></li>
+            <li class="testimonials__dot"></li>
+            <li class="testimonials__dot"></li>
           </ul>
         </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact">
-        <div>
-          <h2>Let's Design Together</h2>
-          <p>
+      <section id="contact" class="contact">
+        <div class="contact__intro">
+          <h2 class="contact__title">Let's Design Together</h2>
+          <p class="contact__description">
             Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
             nibh lectus netus in.
           </p>
         </div>
-        <form>
-          <input type="email" placeholder="Enter your email" required />
-          <button type="submit">Contact Me</button>
+        <form class="contact__form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            required
+            class="contact__form-input"
+          />
+          <button type="submit" class="contact__form-button">Contact Me</button>
         </form>
       </section>
     </main>
-    <!-- Footer -->
-    <footer>
-      <a href="index.html"
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <a href="index.html" class="footer__logo"
         ><img src="assets/logo.svg" alt="Portfolio Logo"
       /></a>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="footer__menu">
+        <li class="footer__menu-item"><a href="#home">Home</a></li>
+        <li class="footer__menu-item"><a href="#about">About Me</a></li>
+        <li class="footer__menu-item"><a href="#services">Services</a></li>
+        <li class="footer__menu-item"><a href="#projects">Projects</a></li>
+        <li class="footer__menu-item">
+          <a href="#testimonials">Testimonials</a>
+        </li>
+        <li class="footer__menu-item"><a href="#contact">Contact</a></li>
       </ul>
-      <p>© 2023 Fawzi Sayed. All rights reserved.</p>
+      <p class="footer__copyright">
+        &copy; 2024 Fawzi Sayed. All Rights Reserved.
+      </p>
     </footer>
   </body>
 </html>
